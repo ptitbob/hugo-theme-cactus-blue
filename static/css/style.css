@@ -13,6 +13,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     cursor: default;
 }
 
+body {
+    background-color: hsl(215, 45%, 40%);
+    color: white;
+}
+
 a {
     cursor: pointer;
 }
@@ -177,6 +182,7 @@ h2 {
 	font-size: 30px;
 	font-weight: bold;
 	color: #555;
+	color: #aaa;
 	font-family: 'Gloria Hallelujah', cursive;
 }
 
@@ -193,6 +199,8 @@ nav.main-nav {
     padding: 20px 20px 0;
     background: #fff;
     background: rgba(255, 255, 255, .90);
+    background-color: hsl(215, 45%, 40%);
+    color: white;
     margin: 0 auto;
     text-align: right;
     z-index: 100;
@@ -203,16 +211,30 @@ nav.main-nav a {
     right: 6px;
     padding: 8px 12px;
     color: #5badf0;
+    color: white;
+    color: hsl(215, 45%, 60%);
+    color: hsl(212, 39%, 72%);
     font-size: 13px;
     line-height: 1.35;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
+    text-decoration: none;
+    border-bottom: 2px solid hsl(215, 45%, 60%);
+    transition: 0.7s ease-out;
+}
+
+nav.main-nav a:hover { 
+    color: white;
+    border-color: hsl(45,98%,77%); 
+    transition: 0.7s ease-out;
 }
 
 nav.main-nav a.cta {
     background: #5badf0;
     color: #fff;
+    color: yellow;
     margin-left: 12px;
 }
+
 @media (max-width: 700px) {
   nav.main-nav {
       padding: 20px 10px 0 0;
@@ -267,6 +289,8 @@ a, #title, #post-list a:hover, #title:hover {
     text-decoration: none;
     color: #5badf0;
     color: #5694f1;
+    color: hsl(45,98%,77%);
+    transition: 0.7s ease-out;
 }
 
 p a {
@@ -282,6 +306,7 @@ a, #post-nav a, #post-list a {
     -ms-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
+    transition: 0.7s ease-out;
 }
 
 ul {
@@ -303,6 +328,7 @@ ul>li {
 #post-body, p {
     line-height: 1.7;
     text-align: justify;
+    color: white;
 }
 
 #post-body p > a {
@@ -357,6 +383,7 @@ em, i {
 .post h1 {
     margin-bottom: 20px;
     color: #222;
+    color: white;
     font: 300 32px/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
 }
@@ -365,6 +392,7 @@ em, i {
     margin-bottom: 40px;
     font: 300 24px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #111;
+    color: white;
 }
 
 .post h2.headline {
@@ -442,9 +470,9 @@ hr {
     background: #eee;
 }
 
-span.code { font-family:Menlo, Monaco, Courier; background-color:#EEE; font-size:14px; }
+span.code { font-family:Menlo, Monaco, Courier; background-color: transparent; font-size:14px; }
 
-p code { font-family:Menlo, Monaco, Courier; background-color:#EEE; font-size:14px; box-shadow: none;}
+p code { font-family:Menlo, Monaco, Courier; background-color: transparent; font-size:14px; box-shadow: none;}
 
 blockquote p code { font-family:Menlo, Monaco, Courier; font-size:14px; background-color: transparent;}
 
@@ -548,7 +576,8 @@ Post List
 #post-list a {
     color: #333;
     display: block;
-    font: bold 19px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
+    color: white;
+    font: normal 19px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
 #post-list .dates {
@@ -685,7 +714,8 @@ Post List
 }
 
 #post-nav span.next:hover .arrow {
-    right: -4px;
+    transition: width 2s ease-in 1s;
+    right: -10px;
 }
 
 #post-nav span.prev:hover {
@@ -693,7 +723,7 @@ Post List
 }
 
 #post-nav span.next:hover {
-    right: -3px;
+    right: -5px;
 }
 
 
@@ -844,6 +874,7 @@ h2.month {
     padding: 10px 0px;
     overflow-x: hidden;
     white-space:nowrap;
+    color: white;
 }
 
 .archive .post-time {
@@ -851,6 +882,7 @@ h2.month {
     width: 60px;
     margin: 0;
     color: #8a8a8a;
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -864,17 +896,30 @@ h2.month {
 
 .archive .post-link {
     color: #8a8a8a;
+    color: white;
 }
 
 .archive .post-item:hover {
     color: #5694f1;
+    color: hsl(45,98%,77%);;
     transition: 0.3s ease-out;
 }
 .archive .post-item:hover .post-link {
     color: #5694f1;
+    color: hsl(45,98%,77%);;
 }
 
 .fa.fa-heart:hover {
+    color: #ff3356;
+    transition: 0.7s ease-out;
+    cursor: pointer;
+}
+
+i .fa-heart {
+    color: yellowgreen;
+}
+
+i .fa-heart:hover {
     color: #ff3356;
     transition: 0.7s ease-out;
     cursor: pointer;
@@ -891,6 +936,7 @@ h2.month {
 
 a.symbol {
     color: #cdd4da;
+    color: #aaa;
     font-size: 2rem;
     text-decoration: none;
     margin-right: 0.3rem;
@@ -946,6 +992,7 @@ a.symbol:hover {
 #TableOfContents a code{
   font-family: Menlo, Monaco, Courier;
   background-color: #fff;
+  background-color: transparent; 
   font-size: 11px;
   padding: 2px 3px;
   font-weight: 100;
@@ -990,7 +1037,8 @@ a.symbol:hover {
 
 .about h1 {
 	font-family: 'Gloria Hallelujah', cursive !important;
-	color: #555;
+    color: #555;
+    color: #aaa;
 	font-size: 1.5em;
 	margin-bottom: 1em;
 }
