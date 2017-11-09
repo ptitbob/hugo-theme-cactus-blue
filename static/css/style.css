@@ -240,6 +240,7 @@ nav.main-nav a.cta {
       padding: 20px 10px 0 0;
       background: #fff;
       background: rgba(255, 255, 255, .90);
+      background-color: hsl(215, 45%, 40%);
       margin: 0 auto;
       text-align: right;
       z-index: 100;
@@ -285,7 +286,14 @@ nav.main-nav a.cta {
 
 /*Accent color*/
 
-a, #title, #post-list a:hover, #title:hover {
+a {
+    color: hsl(45,98%,77%); 
+    color: #5badf0;
+    text-decoration: unset;
+    cursor: pointer;
+}
+
+a:hover, #title, #post-list a:hover, #title:hover {
     text-decoration: none;
     color: #5badf0;
     color: #5694f1;
@@ -294,9 +302,18 @@ a, #title, #post-list a:hover, #title:hover {
 }
 
 p a {
-    color: #5694f1;
+    color: hsl(45,98%,77%); 
+    text-decoration: unset;
+    cursor: pointer;
 }
 
+p a:hover {
+    color: white;
+    color: #5badf0;
+    text-decoration: underline;
+    text-decoration: unset;
+    transition: 0.7s ease-out;
+}
 
 /*Transitions*/
 
@@ -338,7 +355,7 @@ ul>li {
 
 b, strong {
     font-weight: 500;
-    color: #1E2025;
+    color: white;
 }
 
 em, i {
@@ -715,7 +732,7 @@ Post List
 
 #post-nav span.next:hover .arrow {
     transition: width 2s ease-in 1s;
-    right: -10px;
+    right: -5px;
 }
 
 #post-nav span.prev:hover {
@@ -723,7 +740,7 @@ Post List
 }
 
 #post-nav span.next:hover {
-    right: -5px;
+    right: -3px;
 }
 
 
