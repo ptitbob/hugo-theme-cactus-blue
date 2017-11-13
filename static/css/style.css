@@ -16,6 +16,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     background-color: hsl(215, 45%, 40%);
     color: white;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -302,17 +303,18 @@ a:hover, #title, #post-list a:hover, #title:hover {
 }
 
 p a {
-    color: hsl(45,98%,77%); 
+    color: white;
     text-decoration: unset;
     cursor: pointer;
+    border-bottom: 2px solid hsl(215, 45%, 60%);
 }
 
 p a:hover {
     color: white;
-    color: #5badf0;
     text-decoration: underline;
     text-decoration: unset;
     transition: 0.7s ease-out;
+    border-bottom: 2px solid hsl(45,98%,77%); 
 }
 
 /*Transitions*/
