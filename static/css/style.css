@@ -355,6 +355,10 @@ ul>li {
   white-space: pre-wrap;
 }
 
+#post-body .olist p, #post-body .colist p {
+    display: inline;
+}
+
 b, strong {
     font-weight: 500;
     color: white;
