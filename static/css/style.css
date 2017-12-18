@@ -334,7 +334,7 @@ ul {
 }
 
 li {
-    list-style-position: inside;
+    /* list-style-position: inside; */
 }
 
 ul>li {
@@ -562,7 +562,7 @@ thead th, th {
 }
 
 img {
-    width: 100%;
+    /*width: 100%;*/
     max-width: 100%;
     border-radius: 3px;
 }
