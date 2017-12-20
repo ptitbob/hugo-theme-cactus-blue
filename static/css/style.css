@@ -536,7 +536,12 @@ th, td {
 table td, td {
     border-spacing: none;
     border-style: solid;
-    padding: 10px 15px;
+    padding: 0 15px;
+
+}
+
+tr>td>p {
+    margin: 0;
 }
 
 tr>td {
