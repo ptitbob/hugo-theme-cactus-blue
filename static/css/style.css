@@ -493,11 +493,11 @@ hr {
     background: #eee;
 }
 
-span.code { font-family:Menlo, Monaco, Courier; background-color: transparent; font-size:14px; }
+span.code { font-family:Menlo, Monaco, Courier; background-color: transparent; font-size:14px; font-weight: 700; color: hsl(45,98%,77%); }
 
-p code { font-family:Menlo, Monaco, Courier; background-color: transparent; font-size:14px; box-shadow: none;}
+p code { font-family:Anonymous Pro, Menlo, Monaco, Courier; background-color: transparent; font-size:16px; box-shadow: none; font-weight: 700; color: hsl(45,98%,77%);}
 
-blockquote p code { font-family:Menlo, Monaco, Courier; font-size:14px; background-color: transparent;}
+blockquote p code { font-family:Anonymous Pro, Menlo, Monaco, Courier; font-size:14px; background-color: transparent; font-weight: 700; color: hsl(45,98%,77%);}
 
 pre	{
 	font-family:Menlo, Monaco, Courier;
